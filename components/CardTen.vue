@@ -1,6 +1,6 @@
 <template>
-  <div>
     <div>
+        <div>
       <b-card
         title="Card Title"
         img-src="https://picsum.photos/600/300/?image=25"
@@ -17,16 +17,12 @@
         <b-button href="#" variant="primary">Go somewhere</b-button>
       </b-card>
     </div>
-    <Tutorial />
-  </div>
-</template>
-
-<script>
-export default {
-  name: "IndexPage",
-};
-</script>
-
-<style scoped>
-
-</style>
+    </div>
+  </template>
+  
+  <style>
+  .nuxt-logo {
+    height: 180px;
+  }
+  </style>
+  
