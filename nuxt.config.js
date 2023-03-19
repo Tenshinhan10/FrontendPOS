@@ -42,11 +42,11 @@ export default {
   ],
   axios: {
     // extra config e.g
-    BaseURL: "https://462b-119-76-14-246.ap.ngrok.io/api",
+    BaseURL: "http://localhost:5000/api",
   },
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: "https://462b-119-76-14-246.ap.ngrok.io/api",
+      browserBaseURL: "http://localhost:5000/api",
     },
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build

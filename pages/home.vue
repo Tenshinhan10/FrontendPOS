@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <Homepage />
+  <div class="text-center"><br>
+    <NuxtLogo />
+    <div>
+      <br><h1>Welcome to POS Shop</h1>
+    </div>
   </div>
 </template>
 
@@ -11,4 +14,5 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

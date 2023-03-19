@@ -1,28 +1,55 @@
 <template>
     <div>
-        <div>
+        <div class="container">
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
+        :title="name"
+        :img-src="img"
         img-alt="Image"
         img-top
         tag="article"
-        style="max-width: 20rem"
         class="mb-2"
       >
         <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          รายละเอียด : {{ detail }} <br>
+          ราคา : {{ price }} ฿
         </b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button href="#" variant="primary">Buy</b-button>
       </b-card>
     </div>
     </div>
   </template>
   
+<script>
+export default {
+  props:{
+  price:{
+    type: Number,
+    default:0,
+  },
+  name:{
+    type: String,
+    default:"",
+  },
+  img:{
+    type: String,
+    default:"",
+  },
+  detail:{
+    type: String,
+    default:"",
+  }
+  }
+}
+</script>
+
   <style>
   .nuxt-logo {
     height: 180px;
   }
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
   </style>
   

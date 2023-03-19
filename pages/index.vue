@@ -1,32 +1,40 @@
 <template>
   <div>
-    <div>
-      <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem"
-        class="mb-2"
-      >
-        <b-card-text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-      </b-card>
+    <div class="text-center">
+      <div class="row">
+        <div class="col-4" v-for="i in data" :key="i.id">
+          <CardTen :name="i.name" :price="i.price" :img="i.img" :detail="i.detail"/>
+        </div>
+        <hr />
+      </div>
     </div>
-    <Tutorial />
   </div>
 </template>
 
 <script>
+import CardTen from '../components/CardTen.vue';
+
 export default {
-  name: "IndexPage",
+    name: "IndexPage",
+    components: { CardTen },
+    layout : "default", 
+    data() {
+    return {
+      data: [],
+    };
+  },
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    async getData() {
+      const { data } = await this.$axios.get();
+      this.data = data;
+    },
+  }, 
 };
 </script>
 
-<style scoped>
+<style scoped
 
 </style>

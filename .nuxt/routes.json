@@ -1,0 +1,30 @@
+[
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "C:\\\\Project1\\\\posshop\\\\pages\\\\home.vue",
+    "chunkName": "pages/home",
+    "_name": "_13ff7656"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Project1\\\\posshop\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_ec5789fc"
+  },
+  {
+    "name": "university",
+    "path": "/university",
+    "component": "C:\\\\Project1\\\\posshop\\\\pages\\\\university.vue",
+    "chunkName": "pages/university",
+    "_name": "_06ce7945"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Project1\\\\posshop\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7fa6d02a"
+  }
+]
